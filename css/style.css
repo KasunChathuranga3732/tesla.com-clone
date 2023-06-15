@@ -151,3 +151,214 @@ body {
 }
 
 
+
+/* Middle fixed */
+
+#middle-fixed {
+    margin-top: 75px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.image {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    scroll-snap-align: start;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.image:first-child {
+    background-image: url(/img/1.jpeg);
+
+}
+
+.image:nth-child(2) {
+    background-image: url(/img/2.jpeg);
+
+}
+
+.image:nth-child(3) {
+    background-image: url(/img/3.jpeg);
+}
+
+.image:nth-child(4) {
+    background-image: url(/img/4.jpeg);
+}
+
+.image:nth-child(5) {
+    background-image: url(/img/5.jpeg);
+}
+
+.image:nth-child(6) {
+    background-image: url(/img/6.webp);
+}
+
+.image:nth-child(7) {
+    background-image: url(/img/7.jpeg);
+    height: 84vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+.image:nth-child(7):hover > div {
+    opacity: 1;
+}
+
+.image:hover > div {
+    opacity: 1;
+}
+
+.image-content-div {
+    height: 81.5vh;
+    width: 600px;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 500ms;
+}
+
+.image-content-div > :first-child {
+    font-size: 40px;
+    color: #171A20;
+    text-align: center;
+    font-weight: 500;
+    padding: 5px 24px;
+}
+
+
+.image-content-div > :nth-child(2) {
+    text-align: center;
+    padding: 6px 24px 14px;
+}
+
+.image-content-div > :nth-child(2) > a {
+    color: #171A20;
+    text-decoration: none;
+    border-bottom: 1px solid #171A20;
+}
+
+.image-content-div > :nth-child(2) > a:hover {
+    border-bottom: 3px solid #393C41;
+    transition-property: all;
+    transition-duration: 300ms;
+}
+
+.image-content-div > :nth-child(3) {
+    position: relative;
+    text-align: center;
+    top: 64%;
+}
+
+.image-content-div > :nth-child(3) > :first-child {
+    background-color: #171A20CC;
+    color: #FFFFFF;
+    display: inline-block;
+    width: 264px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.image-content-div > :nth-child(3) > :last-child {
+    background-color: #F4F4F4A6;
+    color: #393C41;
+    display: inline-block;
+    width: 264px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+
+#scroll1 {
+    position: relative;
+    top: 66%;
+    left: 47%;
+}
+
+#scroll1 > a {
+    position: relative;
+}
+
+#scroll1 > a > ion-icon {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    color: #171A20;
+    animation-name: move-arrow;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes move-arrow {
+    from {
+        margin-top: 0;
+    }
+
+    40% {
+        margin-top: 15px;
+    }
+
+    80% {
+        margin-top: 0;
+    }
+
+    90% {
+        margin-top: 5px;
+    }
+
+    to {
+        margin-top: 0;
+    }
+}
+
+
+
+.image:nth-child(7) > div {
+    height: 72vh;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 300ms;
+
+}
+
+.image:nth-child(7) > div > :first-child{
+    height: 48px;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    color: #171A20;
+    text-align: center;
+
+}
+
+#img-7-button {
+    text-align: center;
+    position: relative;
+    top: 81%;
+}
+
+#img-7-button > a {
+    color: #FFFFFF;
+    background-color: #171A20;
+    font-size: 14px;
+    font-weight: 500;
+    display: inline-block;
+    width: 264px;
+    height: 40px;
+    line-height: 40px;
+    text-decoration: none;
+}
