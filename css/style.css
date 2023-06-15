@@ -362,3 +362,29 @@ body {
     line-height: 40px;
     text-decoration: none;
 }
+
+
+
+/* Footer */
+
+footer > div {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer-menu {
+    position: absolute;
+}
+
+#footer-menu > a {
+    position: relative;
+    font-weight: 500;
+    font-size: 12px;
+    text-decoration: none;
+    color: #5C5E62;
+    margin: 0 12px 0 0;
+    padding: 6px 0;
+}
+
